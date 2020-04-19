@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <header class="header">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <h1 id="title" class="text-center">Art Gallery</h1>
+    <p id="description" class="description text-center">
+      Thank you for taking the time to help us improve our service
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required/>
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required/>
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"/>
+    </div>
+    <div class="form-group">
+      <p><span style="font-weight: bold;" "font-size: 60px;">
+       1. How often do you buy art?</span></p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked/>Once a month</label>
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"/>
+        A couple of times a  year</label>
+      <label>
+        <input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"/>Once a year</label>
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"/>Rarely, perhaps once a year or two</label>
+    <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"/>Never, I have never bought art before</label>
+      <br>
+    <div class="form-group">
+      <p><span style="font-weight: bold;" "font-size: 60px;">2. How often do you visit an art gallery you like?</span></p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Once a month</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Once a year</label>
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Rarely</label>
+    </div>
+<div class="form-group">
+      <p><span style="font-weight: bold;" "font-size: 60px;">
+        3. What kind of interior decorating style would be your favorite for a gallery?
+        <span class="clue">(Check all that apply)</span>
+        </span></p>
+<label><input
+          name="prefer"
+          value="Cozy"
+          type="checkbox"
+          class="input-checkbox"
+        />Cozy and simple with soft chairs, warm colors, dark floors, and low lighting, but spotlights on the art.</label>
+      <label>
+        <input
+          name="prefer"
+          value="Clean"
+          type="checkbox"
+          class="input-checkbox"
+        />Clean, white, bright, monochromatic, with modern accents. White floor, white walls, and modern art.</label>
+      <label><input
+          name="prefer"
+          value="vintage"
+          type="checkbox"
+          class="input-checkbox"
+        />
+An even mix of vintage: red brick and old tables with reclaimed wood floor, paired with modern art, structure and modern display styles.</label>
+      <label><input
+          name="prefer"
+          value="regal"
+          type="checkbox"
+          class="input-checkbox"
+        />Regal with golds, browns, reds, velvety fabric, and crystal chandeliers.</label>
+     <div class="form-group">
+     <br>
+      <p><span style="font-weight: bold;" "font-size: 60px;">
+        4. What is your gender?
+        </p></span>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="challenges">Male</option>
+        <option value="projects">Female</option>
+        <option value="openSource">Prefer not to say</option>
+      </select>
+       </div>
+<div class="form-group">
+      <p><span style="font-weight: bold;" "font-size: 60px;">5. Which option best describes your current job?</p></span>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">full-time</option>
+        <option value="job">Part-time</option>
+        <option value="learner">Self-employed</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
